@@ -119,8 +119,8 @@ proto_dependency(
     patches = ["@build_stack_rules_proto//third_party:bazel-gazelle-revert-1152.patch"],
     repository_rule = "http_archive",
     sha256 = "a0ee1d304f7caa46680ba06bdef0e5d9ec8815f6e01ec29398efd13256598c3f",
-    strip_prefix = "bazel-gazelle-0.35.0",
-    urls = ["https://github.com/bazelbuild/bazel-gazelle/archive/v0.35.0.tar.gz"],
+    strip_prefix = "bazel-gazelle-0.34.0",
+    urls = ["https://github.com/bazelbuild/bazel-gazelle/archive/v0.34.0.tar.gz"],
     deps = [
         ":bazel_skylib",
         ":io_bazel_rules_go",

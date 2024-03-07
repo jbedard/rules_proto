@@ -359,7 +359,11 @@ type overrideKey struct {
 //
 // NOTE: in https://github.com/bazelbuild/bazel-gazelle/pull/1687,
 // []overrideSpec was changed to map[overrideKey]label.Label
-type overrideSpec map[overrideKey]label.Label
+type overrideSpec struct {
+	imp  resolve.ImportSpec
+	lang string
+	dep  label.Label
+}
 
 func langKey(lang, impLang string) string {
 	return lang + " " + impLang

@@ -43,9 +43,9 @@ def bazel_gazelle():
         http_archive,
         name = "bazel_gazelle",
         sha256 = "a0ee1d304f7caa46680ba06bdef0e5d9ec8815f6e01ec29398efd13256598c3f",
-        strip_prefix = "bazel-gazelle-0.35.0",
+        strip_prefix = "bazel-gazelle-0.34.0",
         urls = [
-            "https://github.com/bazelbuild/bazel-gazelle/archive/v0.35.0.tar.gz",
+            "https://github.com/bazelbuild/bazel-gazelle/archive/v0.34.0.tar.gz",
         ],
         patches = [
             "@build_stack_rules_proto//third_party:bazel-gazelle-revert-1152.patch",
